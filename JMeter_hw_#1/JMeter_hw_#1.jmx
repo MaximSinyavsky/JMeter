@@ -5,6 +5,8 @@
       <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
         <collectionProp name="Arguments.arguments"/>
       </elementProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
     </TestPlan>
     <hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="50_threads" enabled="false">
@@ -18,7 +20,7 @@
         </elementProp>
       </ThreadGroup>
       <hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="get_method">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="get_method" enabled="true">
           <stringProp name="HTTPSampler.domain">162.55.220.72</stringProp>
           <stringProp name="HTTPSampler.port">5005</stringProp>
           <stringProp name="HTTPSampler.protocol">http</stringProp>
@@ -47,7 +49,7 @@
           </elementProp>
         </HTTPSamplerProxy>
         <hashTree/>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="user_info_2">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="user_info_2" enabled="true">
           <stringProp name="HTTPSampler.domain">162.55.220.72</stringProp>
           <stringProp name="HTTPSampler.port">5005</stringProp>
           <stringProp name="HTTPSampler.protocol">http</stringProp>
@@ -84,7 +86,7 @@
           </elementProp>
         </HTTPSamplerProxy>
         <hashTree/>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="user_info_3">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="user_info_3" enabled="true">
           <stringProp name="HTTPSampler.domain">162.55.220.72</stringProp>
           <stringProp name="HTTPSampler.port">5005</stringProp>
           <stringProp name="HTTPSampler.protocol">http</stringProp>
@@ -121,7 +123,7 @@
           </elementProp>
         </HTTPSamplerProxy>
         <hashTree/>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="object_info_1">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="object_info_1" enabled="true">
           <stringProp name="HTTPSampler.domain">162.55.220.72</stringProp>
           <stringProp name="HTTPSampler.port">5005</stringProp>
           <stringProp name="HTTPSampler.protocol">http</stringProp>
@@ -157,7 +159,7 @@
           </elementProp>
         </HTTPSamplerProxy>
         <hashTree/>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="object_info_2">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="object_info_2" enabled="true">
           <stringProp name="HTTPSampler.domain">162.55.220.72</stringProp>
           <stringProp name="HTTPSampler.port">5005</stringProp>
           <stringProp name="HTTPSampler.protocol">http</stringProp>
@@ -193,7 +195,7 @@
           </elementProp>
         </HTTPSamplerProxy>
         <hashTree/>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="object_info_3">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="object_info_3" enabled="true">
           <stringProp name="HTTPSampler.domain">162.55.220.72</stringProp>
           <stringProp name="HTTPSampler.port">5005</stringProp>
           <stringProp name="HTTPSampler.protocol">http</stringProp>
@@ -229,7 +231,7 @@
           </elementProp>
         </HTTPSamplerProxy>
         <hashTree/>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="object_info_4">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="object_info_4" enabled="true">
           <stringProp name="HTTPSampler.domain">162.55.220.72</stringProp>
           <stringProp name="HTTPSampler.port">5005</stringProp>
           <stringProp name="HTTPSampler.protocol">http</stringProp>
@@ -265,7 +267,7 @@
           </elementProp>
         </HTTPSamplerProxy>
         <hashTree/>
-        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree">
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
           <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
             <name>saveConfig</name>
@@ -302,7 +304,7 @@
           <stringProp name="filename"></stringProp>
         </ResultCollector>
         <hashTree/>
-        <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report">
+        <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="true">
           <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
             <name>saveConfig</name>
@@ -339,7 +341,7 @@
           <stringProp name="filename"></stringProp>
         </ResultCollector>
         <hashTree/>
-        <ResultCollector guiclass="TableVisualizer" testclass="ResultCollector" testname="View Results in Table">
+        <ResultCollector guiclass="TableVisualizer" testclass="ResultCollector" testname="View Results in Table" enabled="true">
           <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
             <name>saveConfig</name>
@@ -388,7 +390,7 @@
         </elementProp>
       </ThreadGroup>
       <hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="get_method">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="get_method" enabled="true">
           <stringProp name="HTTPSampler.domain">162.55.220.72</stringProp>
           <stringProp name="HTTPSampler.port">5005</stringProp>
           <stringProp name="HTTPSampler.protocol">http</stringProp>
@@ -417,7 +419,7 @@
           </elementProp>
         </HTTPSamplerProxy>
         <hashTree/>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="user_info_2">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="user_info_2" enabled="true">
           <stringProp name="HTTPSampler.domain">162.55.220.72</stringProp>
           <stringProp name="HTTPSampler.port">5005</stringProp>
           <stringProp name="HTTPSampler.protocol">http</stringProp>
@@ -454,7 +456,7 @@
           </elementProp>
         </HTTPSamplerProxy>
         <hashTree/>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="user_info_3">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="user_info_3" enabled="true">
           <stringProp name="HTTPSampler.domain">162.55.220.72</stringProp>
           <stringProp name="HTTPSampler.port">5005</stringProp>
           <stringProp name="HTTPSampler.protocol">http</stringProp>
@@ -491,7 +493,7 @@
           </elementProp>
         </HTTPSamplerProxy>
         <hashTree/>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="object_info_1">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="object_info_1" enabled="true">
           <stringProp name="HTTPSampler.domain">162.55.220.72</stringProp>
           <stringProp name="HTTPSampler.port">5005</stringProp>
           <stringProp name="HTTPSampler.protocol">http</stringProp>
@@ -527,7 +529,7 @@
           </elementProp>
         </HTTPSamplerProxy>
         <hashTree/>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="object_info_2">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="object_info_2" enabled="true">
           <stringProp name="HTTPSampler.domain">162.55.220.72</stringProp>
           <stringProp name="HTTPSampler.port">5005</stringProp>
           <stringProp name="HTTPSampler.protocol">http</stringProp>
@@ -563,7 +565,7 @@
           </elementProp>
         </HTTPSamplerProxy>
         <hashTree/>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="object_info_3">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="object_info_3" enabled="true">
           <stringProp name="HTTPSampler.domain">162.55.220.72</stringProp>
           <stringProp name="HTTPSampler.port">5005</stringProp>
           <stringProp name="HTTPSampler.protocol">http</stringProp>
@@ -599,7 +601,7 @@
           </elementProp>
         </HTTPSamplerProxy>
         <hashTree/>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="object_info_4">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="object_info_4" enabled="true">
           <stringProp name="HTTPSampler.domain">162.55.220.72</stringProp>
           <stringProp name="HTTPSampler.port">5005</stringProp>
           <stringProp name="HTTPSampler.protocol">http</stringProp>
@@ -747,7 +749,7 @@
         </ResultCollector>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="500_threads">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="500_threads" enabled="true">
         <intProp name="ThreadGroup.num_threads">500</intProp>
         <intProp name="ThreadGroup.ramp_time">2</intProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
@@ -758,7 +760,7 @@
         </elementProp>
       </ThreadGroup>
       <hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="get_method">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="get_method" enabled="true">
           <stringProp name="HTTPSampler.domain">162.55.220.72</stringProp>
           <stringProp name="HTTPSampler.port">5005</stringProp>
           <stringProp name="HTTPSampler.protocol">http</stringProp>
@@ -787,7 +789,7 @@
           </elementProp>
         </HTTPSamplerProxy>
         <hashTree/>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="user_info_2">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="user_info_2" enabled="true">
           <stringProp name="HTTPSampler.domain">162.55.220.72</stringProp>
           <stringProp name="HTTPSampler.port">5005</stringProp>
           <stringProp name="HTTPSampler.protocol">http</stringProp>
@@ -824,7 +826,7 @@
           </elementProp>
         </HTTPSamplerProxy>
         <hashTree/>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="user_info_3">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="user_info_3" enabled="true">
           <stringProp name="HTTPSampler.domain">162.55.220.72</stringProp>
           <stringProp name="HTTPSampler.port">5005</stringProp>
           <stringProp name="HTTPSampler.protocol">http</stringProp>
@@ -861,7 +863,7 @@
           </elementProp>
         </HTTPSamplerProxy>
         <hashTree/>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="object_info_1">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="object_info_1" enabled="true">
           <stringProp name="HTTPSampler.domain">162.55.220.72</stringProp>
           <stringProp name="HTTPSampler.port">5005</stringProp>
           <stringProp name="HTTPSampler.protocol">http</stringProp>
@@ -897,7 +899,7 @@
           </elementProp>
         </HTTPSamplerProxy>
         <hashTree/>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="object_info_2">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="object_info_2" enabled="true">
           <stringProp name="HTTPSampler.domain">162.55.220.72</stringProp>
           <stringProp name="HTTPSampler.port">5005</stringProp>
           <stringProp name="HTTPSampler.protocol">http</stringProp>
@@ -933,7 +935,7 @@
           </elementProp>
         </HTTPSamplerProxy>
         <hashTree/>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="object_info_3">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="object_info_3" enabled="true">
           <stringProp name="HTTPSampler.domain">162.55.220.72</stringProp>
           <stringProp name="HTTPSampler.port">5005</stringProp>
           <stringProp name="HTTPSampler.protocol">http</stringProp>
@@ -969,7 +971,7 @@
           </elementProp>
         </HTTPSamplerProxy>
         <hashTree/>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="object_info_4">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="object_info_4" enabled="true">
           <stringProp name="HTTPSampler.domain">162.55.220.72</stringProp>
           <stringProp name="HTTPSampler.port">5005</stringProp>
           <stringProp name="HTTPSampler.protocol">http</stringProp>

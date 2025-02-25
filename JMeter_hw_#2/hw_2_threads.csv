@@ -1,0 +1,6 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1740494782893,113,login,200,OK,JMeter_hw_2 1-1,text,true,,214,626,1,1,http://162.55.220.72:5005/login,113,0,52
+1740494783008,108,user_info,200,OK,JMeter_hw_2 1-1,text,true,,384,309,1,1,http://162.55.220.72:5005/user_info,107,0,52
+1740494783118,111,new_data,200,OK,JMeter_hw_2 1-1,text,true,,237,979,1,1,http://162.55.220.72:5005/new_data,111,0,53
+1740494783231,114,test_pet_info,200,OK,JMeter_hw_2 1-1,text,true,,230,1018,1,1,http://162.55.220.72:5005/test_pet_info,114,0,52
+1740494783346,115,get_test_user,200,OK,JMeter_hw_2 1-1,text,true,,370,1020,1,1,http://162.55.220.72:5005/get_test_user,114,0,52
